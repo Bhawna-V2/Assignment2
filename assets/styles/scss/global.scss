@@ -1,0 +1,107 @@
+@import "variable.scss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
+  font-family: "Montserrat", sans-serif;
+  color: $black;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  color: $grey;
+  line-height: normal;
+}
+
+a {
+  color: $black;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  &:hover {
+    color: $aqua;
+  }
+}
+
+h1 {
+  font-size: 38px;
+  @media #{$sm-down} {
+    font-size: 30px;
+  }
+}
+
+h2 {
+    font-size: 32px;
+}
+h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
+.text-white {
+  color: $white;
+}
+.bg-light-grey {
+    background-color: $light-grey;
+}
+.bg-aqua {
+    background-color: $aqua;
+}
+.bg-dark {
+    background-color: $black;
+}
+.btn {
+  font-size: 14px;
+  background: #10c9c3;
+  padding: 15px;
+  display: inline-block;
+  min-width: 190px;
+  text-align: center;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+  font-weight: 600;
+  border: none;
+  box-shadow: none;
+  &:hover {
+    background: $white;
+  }
+}
+/* image */
+.img-cover {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* spacing */
+.sec-spacing {
+    padding: 100px 0;
+    @media #{$sm-down} {
+        padding: 50px 0;
+    }
+}
+.display-aic {
+    display: flex;
+    align-items: center;
+}
+.text-center {
+    text-align: center;
+}
+
+/* container */
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}

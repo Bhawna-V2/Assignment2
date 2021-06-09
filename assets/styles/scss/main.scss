@@ -1,0 +1,287 @@
+@import "variable.scss";
+
+// Banner section
+.banner {
+  background: url(../../images/bg.jpg) no-repeat;
+  background-size: cover;
+  height: 670px;
+  @media #{$xl-down} {
+    background-position: top;
+  }
+  header {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 40px;
+    @media #{$md-down} {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    .mob-nav {
+      @media #{$sm-up} {
+        display: none;
+      }
+    }
+    nav {
+      @media #{$sm-down} {
+        display: none;
+        position: absolute;
+        background: $white;
+        padding: 20px 40px;
+        top: 90px;
+        left: 25px;
+        width: calc(100% - 50px);
+      }
+
+      @media #{$sm-up} {
+        display: block !important;
+      }
+      a {
+        font-size: 13px;
+        text-transform: uppercase;
+        margin-left: 20px;
+        display: inline-flex;
+        align-items: center;
+        letter-spacing: 1px;
+        @media #{$md-down} {
+          margin-left: 15px;
+        }
+        @media #{$sm-down} {
+          display: block;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+  .banner-main {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: calc(100% - 101px);
+    @media #{$sm-down} {
+      text-align: center;
+      justify-content: center;
+    }
+    .banner-content {
+      max-width: 480px;
+      margin-right: 100px;
+      @media #{$md-down} {
+        margin-right: 50px;
+      }
+      @media #{$sm-down} {
+        background: rgba($white, 0.6);
+        padding: 20px;
+        max-width: 100%;
+        margin: 50px;
+      }
+      p {
+        font-size: 18px;
+        margin: 30px 0;
+        line-height: 28px;
+      }
+    }
+  }
+}
+// About Us
+
+.about-section {
+    .about-content {
+        p {
+            margin: 40px 0 80px 0;
+            letter-spacing: 1px;
+        }
+    }
+}
+.sec-content {
+    max-width: 680px;
+    margin: 0 auto;
+    @media #{$md-down}{
+        max-width: 580px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    @media #{$sm-down}{
+        max-width: 100%;
+    }
+}
+
+// Technology
+
+.technology {
+    &-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding-left: 25px;
+        padding-right: 25px;
+        @media #{$md-down} { 
+            gap: 20px;
+        }
+    }
+    &-items {
+        width: calc(25% - 30px);
+        @media #{$md-down} { 
+            width: calc(25% - 15px);
+        }
+        @media #{$sm-down} { 
+            width: calc(50% - 15px);
+        }
+        img {
+            width: 40px;
+            height: 40px;
+        }
+        h5 {
+            text-transform: uppercase;
+            margin: 10px 0;
+            letter-spacing: 1px;
+        }
+        p {
+            max-width: 250px;
+            margin: 0 auto;
+        }
+    }
+}
+
+// Stats
+
+.stats {
+    .stats-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        @media #{$lg-down} {
+            padding: 0 25px;
+            gap: 15px;
+        }
+        @media #{$sm-down} {
+            gap: 30px;
+        }
+        .stat-items {
+            display: flex;
+            align-items: center;
+            width: calc(25% - 23px);
+            @media #{$lg-down} {
+                width: calc(25% - 12px);
+            }
+            @media #{$sm-down} {
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            img {
+                width: 50px;
+            }
+            .stat-data {
+                margin-left: 25px;
+                line-height: 26px;
+                @media #{$lg-down} {
+                    margin-left: 15px;
+                }
+                h4 {
+                    color: $white;
+                }
+                label {
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    letter-spacing: 1px;
+                    font-weight: 600;
+                    @media #{$lg-down} {
+                        font-size: 12px;
+                    }
+                }
+            }
+        } 
+    }
+}
+
+// Project
+
+.project {
+    .project-content {
+        p {
+            padding: 0 100px;
+            margin: 30px 0;
+            line-height: 24px;
+            @media #{$sm-down} {
+                padding: 0;
+            }
+        }
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            input {
+                &:nth-child(1),
+                &:nth-child(2) {
+                    @media #{$xs-up} {
+                        width: calc(50% - 10px);
+                    }
+                }
+            }
+            button {
+                color: $white;
+                padding-top: 18px;
+                padding-bottom: 18px;
+                &:hover {
+                    color: $aqua;
+                }
+            }
+            input, textarea {
+                font-family: inherit;
+                font-weight: 600;
+                letter-spacing: 1px;
+                color: #202833;
+                width: 100%;
+                background: $white;
+                padding: 20px 30px;
+                border: 0;
+                transition: all .3s;
+            }
+        }
+    }
+}
+
+// Footer 
+.footer {
+    .container {
+        display: flex;
+        gap: 30px;
+        @media #{$sm-down} {
+            flex-direction: column;
+            padding: 0 25px;
+        }
+    }
+    h3 {
+        color: $white;
+    }
+    p {
+        color: $white;
+    }
+    a {
+        color: $white;
+        text-transform: none;
+        font-weight: 300;
+    }
+    .contact-main {
+        display: flex;
+        gap: 30px;
+    }
+    .link-main {
+        display: flex;
+        gap: 30px;
+        nav {
+            
+            a {
+                display: block;
+            }
+        }
+    }
+}

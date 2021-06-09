@@ -1,0 +1,123 @@
+/* Media query Breakpoints */
+/* Color */
+/* Font Family */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Nunito+Sans:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav {
+  font-family: "Montserrat", sans-serif;
+  color: #1D1F1E;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  color: #757575;
+  line-height: normal;
+}
+
+a {
+  color: #1D1F1E;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+a:hover {
+  color: #10C9C3;
+}
+
+h1 {
+  font-size: 38px;
+}
+@media (max-width:767px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.bg-light-grey {
+  background-color: #F5F5F5;
+}
+
+.bg-aqua {
+  background-color: #10C9C3;
+}
+
+.bg-dark {
+  background-color: #1D1F1E;
+}
+
+.btn {
+  font-size: 14px;
+  background: #10c9c3;
+  padding: 15px;
+  display: inline-block;
+  min-width: 190px;
+  text-align: center;
+  letter-spacing: 1px;
+  transition: all 0.3s;
+  font-weight: 600;
+  border: none;
+  box-shadow: none;
+}
+.btn:hover {
+  background: #fff;
+}
+
+/* image */
+.img-cover {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* spacing */
+.sec-spacing {
+  padding: 100px 0;
+}
+@media (max-width:767px) {
+  .sec-spacing {
+    padding: 50px 0;
+  }
+}
+
+.display-aic {
+  display: flex;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* container */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=global.css.map */

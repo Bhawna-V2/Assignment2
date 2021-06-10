@@ -263,9 +263,10 @@
   padding-bottom: 18px;
 }
 .project .project-content form button:hover {
-  color: #10C9C3;
+  color: #10c9c3;
 }
-.project .project-content form input, .project .project-content form textarea {
+.project .project-content form input,
+.project .project-content form textarea {
   font-family: inherit;
   font-weight: 600;
   letter-spacing: 1px;
@@ -287,7 +288,9 @@
     flex-direction: column;
   }
 }
-.footer h3, .footer p, .footer a {
+.footer h3,
+.footer p,
+.footer a {
   color: #fff;
 }
 .footer h3 {

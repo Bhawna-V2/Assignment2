@@ -90,224 +90,227 @@
 // About Us
 
 .about-section {
-    .about-content {
-        p {
-            margin: 40px 0 80px 0;
-            letter-spacing: 1px;
-        }
+  .about-content {
+    p {
+      margin: 40px 0 80px 0;
+      letter-spacing: 1px;
     }
+  }
 }
 .sec-content {
-    max-width: 680px;
-    margin: 0 auto;
-    @media #{$md-down}{
-        max-width: 580px;
-        padding-left: 25px;
-        padding-right: 25px;
-    }
-    @media #{$sm-down}{
-        max-width: 100%;
-    }
+  max-width: 680px;
+  margin: 0 auto;
+  @media #{$md-down} {
+    max-width: 580px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  @media #{$sm-down} {
+    max-width: 100%;
+  }
 }
 
 // Technology
 
 .technology {
-    &-content {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 40px;
-        padding-left: 25px;
-        padding-right: 25px;
-        @media #{$md-down} { 
-            gap: 20px;
-        }
+  &-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    @media #{$md-down} {
+      gap: 20px;
     }
-    &-items {
-        width: calc(25% - 30px);
-        @media #{$md-down} { 
-            width: calc(25% - 15px);
-        }
-        @media #{$sm-down} { 
-            width: calc(50% - 15px);
-        }
-        img {
-            width: 40px;
-            height: 40px;
-        }
-        h5 {
-            text-transform: uppercase;
-            margin: 10px 0;
-            letter-spacing: 1px;
-        }
-        p {
-            max-width: 250px;
-            margin: 0 auto;
-        }
+  }
+  &-items {
+    width: calc(25% - 30px);
+    @media #{$md-down} {
+      width: calc(25% - 15px);
     }
+    @media #{$sm-down} {
+      width: calc(50% - 15px);
+    }
+    img {
+      width: 40px;
+      height: 40px;
+    }
+    h5 {
+      text-transform: uppercase;
+      margin: 10px 0;
+      letter-spacing: 1px;
+    }
+    p {
+      max-width: 250px;
+      margin: 0 auto;
+    }
+  }
 }
 
 // Stats
 
 .stats {
-    .stats-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
+  .stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    @media #{$lg-down} {
+      padding: 0 25px;
+      gap: 15px;
+    }
+    @media #{$sm-down} {
+      gap: 30px;
+    }
+    .stat-items {
+      display: flex;
+      align-items: center;
+      width: calc(25% - 23px);
+      @media #{$lg-down} {
+        width: calc(25% - 12px);
+      }
+      @media #{$sm-down} {
+        width: calc(50% - 20px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      @media #{$vs-down} {
+        width: 100%;
+      }
+      img {
+        width: 50px;
+      }
+      .stat-data {
+        margin-left: 25px;
+        line-height: 26px;
         @media #{$lg-down} {
-            padding: 0 25px;
-            gap: 15px;
+          margin-left: 15px;
         }
         @media #{$sm-down} {
-            gap: 30px;
+          margin-left: 0;
         }
-        .stat-items {
-            display: flex;
-            align-items: center;
-            width: calc(25% - 23px);
-            @media #{$lg-down} {
-                width: calc(25% - 12px);
-            }
-            @media #{$sm-down} {
-                width: calc(50% - 20px);
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-            }
-            @media #{$vs-down} {
-                width: 100%;
-            }
-            img {
-                width: 50px;
-            }
-            .stat-data {
-                margin-left: 25px;
-                line-height: 26px;
-                @media #{$lg-down} {
-                    margin-left: 15px;
-                }
-                @media #{$sm-down} {
-                    margin-left: 0;
-                }
-                h4 {
-                    color: $white;
-                }
-                label {
-                    text-transform: uppercase;
-                    font-size: 13px;
-                    letter-spacing: 1px;
-                    font-weight: 600;
-                    @media #{$lg-down} {
-                        font-size: 12px;
-                    }
-                }
-            }
-        } 
+        h4 {
+          color: $white;
+        }
+        label {
+          text-transform: uppercase;
+          font-size: 13px;
+          letter-spacing: 1px;
+          font-weight: 600;
+          @media #{$lg-down} {
+            font-size: 12px;
+          }
+        }
+      }
     }
+  }
 }
 
 // Project
 
 .project {
-    .project-content {
-        p {
-            padding: 0 100px;
-            margin: 30px 0;
-            line-height: 24px;
-            @media #{$sm-down} {
-                padding: 0;
-            }
-        }
-        form {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-            input {
-                &:nth-child(1),
-                &:nth-child(2) {
-                    @media #{$xs-up} {
-                        width: calc(50% - 10px);
-                    }
-                }
-            }
-            button {
-                color: $white;
-                padding-top: 18px;
-                padding-bottom: 18px;
-                &:hover {
-                    color: $aqua;
-                }
-            }
-            input, textarea {
-                font-family: inherit;
-                font-weight: 600;
-                letter-spacing: 1px;
-                color: #202833;
-                width: 100%;
-                background: $white;
-                padding: 20px 30px;
-                border: 0;
-                transition: all .3s;
-            }
-        }
+  .project-content {
+    p {
+      padding: 0 100px;
+      margin: 30px 0;
+      line-height: 24px;
+      @media #{$sm-down} {
+        padding: 0;
+      }
     }
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      input {
+        &:nth-child(1),
+        &:nth-child(2) {
+          @media #{$xs-up} {
+            width: calc(50% - 10px);
+          }
+        }
+      }
+      button {
+        color: $white;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        &:hover {
+          color: $aqua;
+        }
+      }
+      input,
+      textarea {
+        font-family: inherit;
+        font-weight: 600;
+        letter-spacing: 1px;
+        color: #202833;
+        width: 100%;
+        background: $white;
+        padding: 20px 30px;
+        border: 0;
+        transition: all 0.3s;
+      }
+    }
+  }
 }
 
-// Footer 
+// Footer
 .footer {
-    .container {
-        display: flex;
-        gap: 30px;
-        padding: 0 25px;
-        @media #{$sm-down} {
-            flex-direction: column;
-        }
+  .container {
+    display: flex;
+    gap: 30px;
+    padding: 0 25px;
+    @media #{$sm-down} {
+      flex-direction: column;
     }
-    h3, p , a {
-        color: $white;
+  }
+  h3,
+  p,
+  a {
+    color: $white;
+  }
+  h3 {
+    margin-bottom: 20px;
+  }
+  a {
+    text-transform: none;
+    font-weight: 300;
+    font-size: 13px;
+  }
+  .contact-main {
+    display: flex;
+    gap: 30px;
+    width: 60%;
+    @media #{$sm-down} {
+      width: calc(100% - 10px);
+      justify-content: space-between;
     }
-    h3 {
-        margin-bottom: 20px;
+    @media #{$vs-down} {
+      flex-direction: column;
+      text-align: center;
     }
-    a {
-        text-transform: none;
-        font-weight: 300;
-        font-size: 13px;
+    .contact-detail {
+      margin-left: 100px;
+      @media #{$md-down} {
+        margin-left: 0;
+      }
     }
-    .contact-main {
-        display: flex;
-        gap: 30px;
-        width: 60%;
-        @media #{$sm-down} {
-            width: calc(100% - 10px);
-            justify-content: space-between;
-        }
-        @media #{$vs-down} {
-            flex-direction: column;
-            text-align: center;
-        }
-        .contact-detail {
-            margin-left: 100px;
-            @media #{$md-down} {
-                margin-left: 0;
-            }
-        }
+  }
+  .link-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 40%;
+    @media #{$sm-down} {
+      width: 100%;
     }
-    .link-main {
-        display: flex;
-        justify-content: space-between;
-        gap: 30px;
-        width: 40%;
-        @media #{$sm-down} {
-            width:100%;
-        }
-        nav {            
-            a {
-                display: block;
-                line-height: 30px;
-            }
-        }
+    nav {
+      a {
+        display: block;
+        line-height: 30px;
+      }
     }
+  }
 }

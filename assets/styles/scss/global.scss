@@ -44,23 +44,23 @@ h1 {
 }
 
 h2 {
-    font-size: 32px;
+  font-size: 32px;
 }
 h4 {
-    font-size: 20px;
-    font-weight: 600;
+  font-size: 20px;
+  font-weight: 600;
 }
 .text-white {
   color: $white;
 }
 .bg-light-grey {
-    background-color: $light-grey;
+  background-color: $light-grey;
 }
 .bg-aqua {
-    background-color: $aqua;
+  background-color: $aqua;
 }
 .bg-dark {
-    background-color: $black;
+  background-color: $black;
 }
 .btn {
   font-size: 14px;
@@ -80,28 +80,28 @@ h4 {
 }
 /* image */
 .img-cover {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* spacing */
 .sec-spacing {
-    padding: 100px 0;
-    @media #{$sm-down} {
-        padding: 50px 0;
-    }
+  padding: 100px 0;
+  @media #{$sm-down} {
+    padding: 50px 0;
+  }
 }
 .display-aic {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 /* container */
 .container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }

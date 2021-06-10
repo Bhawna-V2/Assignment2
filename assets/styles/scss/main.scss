@@ -187,6 +187,9 @@
                 @media #{$lg-down} {
                     margin-left: 15px;
                 }
+                @media #{$sm-down} {
+                    margin-left: 0;
+                }
                 h4 {
                     color: $white;
                 }

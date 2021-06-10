@@ -192,11 +192,16 @@
 }
 @media (max-width:767px) {
   .stats .stats-container .stat-items {
-    width: 100%;
+    width: calc(50% - 20px);
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+}
+@media (max-width:419px) {
+  .stats .stats-container .stat-items {
+    width: 100%;
   }
 }
 .stats .stats-container .stat-items img {

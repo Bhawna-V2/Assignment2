@@ -169,11 +169,14 @@
                 width: calc(25% - 12px);
             }
             @media #{$sm-down} {
-                width: 100%;
+                width: calc(50% - 20px);
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
+            }
+            @media #{$vs-down} {
+                width: 100%;
             }
             img {
                 width: 50px;

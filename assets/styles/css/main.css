@@ -216,6 +216,11 @@
     margin-left: 15px;
   }
 }
+@media (max-width:767px) {
+  .stats .stats-container .stat-items .stat-data {
+    margin-left: 0;
+  }
+}
 .stats .stats-container .stat-items .stat-data h4 {
   color: #fff;
 }
